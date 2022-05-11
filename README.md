@@ -17,10 +17,11 @@ npm i lib-oauth
 ``` 
 # ./env
 
-REACT_APP_OAUTH_CLIENT_ID=                                          // ◀ OAuth provider clientId
-REACT_APP_OAUTH_CLIENT_SECRET=                                      // ◀ OAuth provider Secret
-REACT_APP_OAUTH_REDIRECT_URL=http://localhost:8000/auth/callback    // ◀ OAuth provider callback url
-REACT_APP_OAUTH_ENDPOINT=http://localhost:8001                      // ◀ Root path of your app, for logout
+REACT_APP_OAUTH_CLIENT_ID=                                  // ◀ OAuth provider clientId
+REACT_APP_OAUTH_CLIENT_SECRET=                              // ◀ OAuth provider Secret
+REACT_APP_OAUTH_REDIRECT_URL=http://localhost:8000/auth/callback    
+                                                            // ◀ OAuth provider callback url
+REACT_APP_OAUTH_ENDPOINT=http://localhost:8001              // ◀ Root path of your app, for logout
 
 ```
 
@@ -53,7 +54,7 @@ const handleLogout = () => {
 <Routes>
     <Route path="" element={<Home/>}/>
     <Route path="about" element={<About/>}/>
-    {OAuthRoutes('/me', handleLogin)}                               // ◀ Add code here
+    {OAuthRoutes('/me', handleLogin)}                       // ◀ Add code here
 </Routes>
 ```
 
@@ -63,7 +64,7 @@ const handleLogout = () => {
     <Route path="" element={<Home/>}/>
     <Route path="about" element={<About/>}/>
     <Route element={<ProtectedRoute user={user}/>}>
-        <Route path="dashboard" element={<Dashboard/>}/>            // ◀ Add code here
+        <Route path="dashboard" element={<Dashboard/>}/>    // ◀ Add code here
     </Route>
     {OAuthRoutes('/me', handleLogin)}
 </Routes>
