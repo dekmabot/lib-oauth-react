@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/dekmabot/lib-oauth-react/issues"
   },
-  "homepage": "https://github.com/dekmabot/lib-oauth-react#readme"
+  "homepage": "https://github.com/dekmabot/lib-oauth-react#readme",
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-router-dom": "^6.3.0"
+  }
 }

@@ -50,7 +50,7 @@ const handleLogout = () => {
 <Routes>
     <Route path="" element={<Home/>}/>
     <Route path="about" element={<About/>}/>
-    {OAuthRoutes('/me', handleLogin)}                       // ◀ Add code here
+    {OAuthRoutes('/dashboard', handleLogin)}                       // ◀ Add code here
 </Routes>
 ```
 
@@ -62,6 +62,6 @@ const handleLogout = () => {
     <Route element={<ProtectedRoute user={user}/>}>
         <Route path="dashboard" element={<Dashboard/>}/>    // ◀ Add code here
     </Route>
-    {OAuthRoutes('/me', handleLogin)}
+    {OAuthRoutes('/dashboard', handleLogin)}
 </Routes>
 ```
