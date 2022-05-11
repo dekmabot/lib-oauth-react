@@ -26,7 +26,7 @@ REACT_APP_OAUTH_ENDPOINT=http://localhost:8001          // ◀ Root path of your
 ```
 
 4. Import needed elements to your React app
-```
+```js
 import {LoginLogoutLink, OAuthRoutes, ProtectedRoute, userObject} from "lib-oauth"
 ```
 
