@@ -1,3 +1,35 @@
+# lib-oauth
+
+> OAuth react lib
+
+[![NPM](https://img.shields.io/npm/v/lib-oauth.svg)](https://www.npmjs.com/package/lib-oauth) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+## Install
+
+```bash
+npm install --save lib-oauth
+```
+
+## Usage
+
+```jsx
+import React, { Component } from 'react'
+
+import MyComponent from 'lib-oauth'
+import 'lib-oauth/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <MyComponent />
+  }
+}
+```
+
+## License
+
+MIT © [dekmabot@gmail.com](https://github.com/dekmabot@gmail.com)
+
+
 # Lib to authenticate person through outer OAuth2 server
 
 Allows:
