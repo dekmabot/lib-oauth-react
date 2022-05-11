@@ -1,6 +1,6 @@
 {
   "name": "lib-oauth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React oauth lib",
   "main": "index.js",
   "scripts": {
