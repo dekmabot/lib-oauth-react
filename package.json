@@ -1,0 +1,23 @@
+{
+  "name": "lib-oauth",
+  "version": "0.0.1",
+  "description": "React oauth lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekmabot/lib-oauth-react.git"
+  },
+  "keywords": [
+    "react",
+    "oauth"
+  ],
+  "author": "dekmabot@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dekmabot/lib-oauth-react/issues"
+  },
+  "homepage": "https://github.com/dekmabot/lib-oauth-react#readme"
+}
