@@ -14,19 +14,19 @@ npm i lib-oauth
 ```
 
 2. Register on some OAuth2.0 provider with `//auth/callback` callback url, then add environment variables to your `.env` file
-``` 
+```js 
 # ./env
 
-REACT_APP_OAUTH_CLIENT_ID=                                  // ◀ OAuth provider clientId
-REACT_APP_OAUTH_CLIENT_SECRET=                              // ◀ OAuth provider Secret
+REACT_APP_OAUTH_CLIENT_ID=                              // ◀ OAuth provider clientId
+REACT_APP_OAUTH_CLIENT_SECRET=                          // ◀ OAuth provider Secret
 REACT_APP_OAUTH_REDIRECT_URL=http://localhost:8000/auth/callback    
-                                                            // ◀ OAuth provider callback url
-REACT_APP_OAUTH_ENDPOINT=http://localhost:8001              // ◀ Root path of your app, for logout
+                                                        // ◀ OAuth provider callback url
+REACT_APP_OAUTH_ENDPOINT=http://localhost:8001          // ◀ Root path of your app, for logout
 
 ```
 
 4. Import needed elements to your React app
-```js
+```
 import {LoginLogoutLink, OAuthRoutes, ProtectedRoute, userObject} from "lib-oauth"
 ```
 
